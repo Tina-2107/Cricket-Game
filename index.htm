@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Game</title>
+</head>
+<body>
+    <h1>Rock Paper Scissors!</h1>
+    <button class="btn"
+    onclick="
+    //computer choice randomly
+    let ramdom_No=Math.random()*3;
+    let computerChocie='';
+    let result;
+    if(ramdom_No>0&&ramdom_No<=1){
+        computerChocie='Stone';
+    }
+    else if(ramdom_No>1&&ramdom_No<=2){
+        computerChocie='Paper';
+    }
+    else{ 
+        computerChocie='Scissors';
+    }
+    //start comparing
+    if(computerChocie==='Stone'){
+        result='Tie';
+    }
+    if(computerChocie==='Paper'){
+        result='you loose';
+    }
+    if(computerChocie==='Scissors'){
+        result='you win';
+    }
+    
+    alert(`You chose stone.computer choose ${computerChocie} and ${result}`);
+    "
+    >Stone</button>
+
+    <button class="btn"
+    onclick="
+    //computer choice randomly
+    ramdom_No=Math.random()*3;
+    computerChocie='';
+    result='';
+    if(ramdom_No>0&&ramdom_No<=1){
+        computerChocie='Stone';
+    }
+    else if(ramdom_No>1&&ramdom_No<=2){
+        computerChocie='Paper';
+    }
+    else{ 
+        computerChocie='Scissors';
+    }
+    //start comparing
+    if(computerChocie==='Stone'){
+        result='you win';
+    }
+    if(computerChocie==='Paper'){
+        result='Tie';
+    }
+    if(computerChocie==='Scissors'){
+        result='you loose';
+    }
+    
+    alert(`You chose Paper.computer choose ${computerChocie} and ${result}`);
+    "
+
+    >Paper</button>
+    
+    <button class="btn"
+    onclick="
+    //computer choice randomly
+    ramdom_No=Math.random()*3;
+    computerChocie='';
+    result='';
+    if(ramdom_No>0&&ramdom_No<=1){
+        computerChocie='Stone';
+    }
+    else if(ramdom_No>1&&ramdom_No<=2){
+        computerChocie='Paper';
+    }
+    else{ 
+        computerChocie='Scissors';
+    }
+    //start comparing
+    if(computerChocie==='Stone'){
+        result='Tie';
+    }
+    if(computerChocie==='Paper'){
+        result='you loose';
+    }
+    if(computerChocie==='Scissors'){
+        result='you win';
+    }
+    
+    alert(`You chose Stone.computer choose ${computerChocie} and ${result}`);
+    "
+
+    >Scissors</button>
+
+</body>
+
+
+
+</html> 
