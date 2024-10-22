@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
@@ -8,39 +11,40 @@
 </head>
 <body>
     <h1>Rock Paper Scissors!</h1>
-    <button class="btn" onclick="
+    <div class="container">
+    <button class="btn" id="Stone" onclick="
     let computerChoice = generateComputerChoice();
     let result= getResult('Stone',computerChoice);
     showResult('Stone',computerChoice,result);
     "
-    >Stone</button>
+    ><img src="images/rock.png" alt="Rock" class=" tools"></button>
 
-    <button class="btn" onclick="
+    <button class="btn" id="Paper" onclick="
     computerChoice = generateComputerChoice();
     result= getResult('Paper',computerChoice);
     showResult('Paper',computerChoice,result);
     "
-    >Paper</button>
+    ><img src="images/paper.jpeg" alt="Rock" class=" tools"></button>
 
-    <button class="btn" onclick="
+    <button class="btn" id="Scissors" onclick="
     computerChoice = generateComputerChoice();
     result= getResult('Scissors',computerChoice);
     showResult('Scissors',computerChoice,result);
     "
-    >Scissors</button>
+    ><img src="images/scissor.png" alt="Rock" class=" tools"></button>
+</div>
+<img id="reset-animation" src="images/reset-gif.jpg" alt="Reset Animation" style="display:none; width: 18rem; height: 20rem;">
 
     <button class="clear" onclick="
-    localStorage.clear()
+    localStorage.clear();resetWithAnimation();
     resetScore();
-    ">Reset</button>
+    "><img src="images/reset.png" alt="Reset" class="reset"></button>
 
-    <h3 id="user-move"></h3>
-    <h3 id="computer-move"></h3>
-    <h3 id="result"></h3>
-    <h3 id="score"></h3>
-
-
-
+    <h3 class="font" id="user-move"></h3>
+    <h3 class="font" id="computer-move"></h3>
+    <h3 class="font" id="result"></h3>
+    <h3 class="font" id="score"></h3>
+    
     <script src="index.js">
     </script>
 </body>

@@ -111,3 +111,28 @@ let scorestr=localStorage.getItem('Score');
     document.querySelector('#score').innerText = score.displayScore();
 
     }
+
+    function resetWithAnimation() {
+        // Hide the rock, paper, scissors buttons
+        document.querySelector('#Stone').style.display = 'none';
+        document.querySelector('#Paper').style.display = 'none';
+        document.querySelector('#Scissors').style.display = 'none';
+        
+        // Show the reset animation image
+        let resetAnimation = document.querySelector('#reset-animation');
+        resetAnimation.style.display = 'block';
+        
+        // After 2 seconds, reset everything and hide the animation
+        setTimeout(function() {
+            // Clear localStorage and reset the score
+            localStorage.clear();
+            resetScore();
+    
+            // Hide the animation and show the buttons again
+            resetAnimation.style.display = 'none';
+            document.querySelector('#Stone').style.display = 'inline-block';
+            document.querySelector('#Paper').style.display = 'inline-block';
+            document.querySelector('#Scissors').style.display = 'inline-block';
+        }, 3000);
+    }
+    

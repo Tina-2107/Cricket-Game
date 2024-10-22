@@ -1,3 +1,49 @@
 body{
+    margin: 0;
+    padding: 0;
     text-align: center;
+    background-color: burlywood;
+}
+h1{
+    font-family: "Oi", serif;
+    font-weight: 900;
+    margin-top: 2px;
+}
+.tools{
+    border-radius: 8rem;
+    height: 20rem;
+    width: 18rem;
+}
+.reset{
+
+    width: 3rem;
+}
+#reset-animation{
+    border-radius: 2rem;
+    margin: 0px 30rem 0 30rem;
+    display: none;
+    width: 25rem;
+    height: 25rem;
+}
+#reset-animation img{
+    border-radius: 2rem;
+}
+.clear{
+    background: aqua;
+    padding: 0;
+    border: none;
+    border-radius: 1rem;
+    margin-top: 12px;
+}
+.btn{
+    background-color: aqua;
+    border-radius: 8rem;
+    border: none;
+    margin: 0 30px 0 30px;
+}
+.font{
+    font-family: "Arima", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
 }
